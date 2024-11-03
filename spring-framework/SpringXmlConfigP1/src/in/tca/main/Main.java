@@ -13,29 +13,28 @@ public class Main {
         try {
             ApplicationContext context = new ClassPathXmlApplicationContext(configLocation);
 
-//            Gson gson = new Gson(); 
             
             Gson gson = (Gson) context.getBean("gson");
             
-            Student student = (Student) context.getBean("stdId");
-            
-            student.setId(1);
-            student.setFirstName("Alice");
-            student.setLastName("Smith");
-            student.setDob("2000-01-01");
-            student.setEmail("alice@example.com");
-            student.setPassword(123456);
-            student.setPhone(9876543210L);
-            student.setAddhar(123456789012L);
-            student.setAddress("123 Main St");
-
+            Student student1 = (Student) context.getBean("stdId");
+            System.out.println("01:"+student1.toString());
             // Serialize the Student object to JSON
-            String jsonString = gson.toJson(student);
+            String jsonString = gson.toJson(student1);
             System.out.println("Serialized JSON: " + jsonString);
             
             // Deserialize the JSON string back into a Student object
             Student deserializedStudent = gson.fromJson(jsonString, Student.class);
             System.out.println("Deserialized Student: " + deserializedStudent);
+            System.out.println("-----------------------------------------------");
+            Student student2=(Student) context.getBean("stdObj2");
+            System.out.println("02:"+student2.toString());
+         // Serialize the Student object to JSON
+            String jString=gson.toJson(student2);
+            System.out.println("Serialized Json:"+jString);
+            
+         // Deserialize the JSON string back into a Student object
+            Student dlString = gson.fromJson(jString, Student.class);
+            System.out.println("Deserialized Student: " + dlString);
             
         } catch (BeansException e) {
             e.printStackTrace(); // Handle BeansException
