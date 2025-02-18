@@ -1,0 +1,29 @@
+package in.tca.model;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class User {
+	
+	private int uid;
+	private String name;
+	private String username;
+	private String email;
+	private String password;
+	
+	@Autowired
+//	@Qualifier("taskId2")
+	@Qualifier("taskId1")
+	private Task task;
+	@Autowired
+	private Client client;
+	@Override
+	public String toString() {
+		return "User [uid=" + uid + ", name=" + name + ", username=" + username + ", email=" + email + ", password="
+				+ password + ", task=" + task + ", client=" + client + "]";
+	}
+	
+	
+	
+
+}

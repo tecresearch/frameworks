@@ -1,0 +1,13 @@
+package in.tca.main;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+ 
+	
+	public static void main(String arg[]) {
+		AbstractApplicationContext context=new ClassPathXmlApplicationContext("/in/tca/config/beans.xml");
+		
+	}
+}

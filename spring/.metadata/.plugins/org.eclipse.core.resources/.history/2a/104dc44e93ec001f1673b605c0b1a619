@@ -1,0 +1,10 @@
+package in.tca.beans;
+
+public class Address {
+	
+	String area;
+	String district;
+	String state;
+	int pin;
+
+}

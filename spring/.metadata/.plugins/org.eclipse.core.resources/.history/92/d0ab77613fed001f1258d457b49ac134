@@ -1,0 +1,24 @@
+package in.tca.model;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class User {
+	
+	private int uid;
+	private String name;
+	private String username;
+	private String email;
+	private String password;
+	
+	@Autowired
+//	@Qualifier("taskId2")
+	@Qualifier("taskId1")
+	private Task task;
+	@Autowired
+	private Client client;
+	
+	
+	
+
+}

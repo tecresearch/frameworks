@@ -1,0 +1,21 @@
+package in.tca.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import in.tca.model.Task;
+
+@Configuration
+public class AutoConfig {
+ 
+	public Task createTaskObject() {
+		Task task=new Task();
+		task.setTid(101);
+		task.setTitle("Spring Framework");
+		task.setDescription("Spring Frame Having : Spring-core,Spring-contex,Spring-expression,Spring-logging-common,Spring-jdbc,Spring-orm,Spring-jpa etc.");
+		
+		return task;
+	}
+	
+	
+	
+}
