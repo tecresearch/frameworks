@@ -1,7 +1,0 @@
-package in.tca.model;
-
-public class Client {
-
-	private name;
-	private Task task;
-}

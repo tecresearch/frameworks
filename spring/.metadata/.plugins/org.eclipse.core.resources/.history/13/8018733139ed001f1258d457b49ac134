@@ -1,6 +1,0 @@
-package in.tca.model;
-
-public class Status {
-	private boolean important;
-	private boolean completed;
-}
