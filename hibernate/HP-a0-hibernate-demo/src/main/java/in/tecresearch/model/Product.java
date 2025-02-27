@@ -6,6 +6,14 @@ public class Product {
     private String brand;
     private int price;
 
+
+    public Product(int pid, String name, String brand, int price) {
+        this.pid = pid;
+        this.name = name;
+        this.brand = brand;
+        this.price = price;
+    }
+
     public int getPid() {
         return pid;
     }
