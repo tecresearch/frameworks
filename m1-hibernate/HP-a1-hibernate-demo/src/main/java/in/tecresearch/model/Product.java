@@ -1,9 +1,9 @@
 package in.tecresearch.model;
 
-
 public class Product {
+
     private int pid;
-    private  String name;
+    private String name;
     private String brand;
     private int price;
 
@@ -45,5 +45,15 @@ public class Product {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "pid=" + pid +
+                ", name='" + name + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
