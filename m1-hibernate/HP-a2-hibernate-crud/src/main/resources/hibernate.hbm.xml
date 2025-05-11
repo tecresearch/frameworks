@@ -1,3 +1,4 @@
+<!--no need of hbm if model class configured in cfg class-->
 <!--<?xml version='1.0' encoding='UTF-8'?>  -->
 <!--&lt;!&ndash;<!DOCTYPE hibernate-mapping PUBLIC  &ndash;&gt;-->
 <!--&lt;!&ndash; "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  &ndash;&gt;-->
